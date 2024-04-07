@@ -29,3 +29,25 @@ con HTML?**
 - Acceso universal.
 - Soporte multilenguaje.
 - Accesibilidad.
+___
+3. **En las Especificaciones de HTML, ¿cuándo un elemento o atributo se considera desaprobado? ¿y
+obsoleto?**
+
+Un elemento o atributo de HTML se considera desaprobado cuando ha quedado anticuado por la presencia de estructuras nuevas. Aunque los elementos desaprobados pueden seguir funcionando en algunos navegadores por razones de compatibilidad, su uso no se recomienda y se aconseja utilizar las nuevas estructuras que los han reemplazado.
+
+Por otro lado, un elemento o atributo se considera obsoleto cuando ha sido desaconsejado o incluso eliminado de las especificaciones oficiales de HTML.
+___
+4. **Qué es el DTD y cuáles son los posibles DTDs contemplados en la especificación de HTML 4.01?**
+
+DTD (DOCTYPE, Definición de Tipo de Documento) es una especificación utilizada en la programación web para definir la estructura y las reglas de validación de un documento XML o SGML. Su función básica es la descripción de la estructura de datos, para usar una estructura común y mantener la consistencia entre todos los documentos que utilicen la misma DTD2. La DTD también declara cuáles juegos de caracteres podemos utilizar.
+
+En la especificación de HTML 4.01, se contemplan tres posibles DTDs:
+- Strict: Este DTD hace énfasis en la separación del contenido de la presentación y el comportamiento. Excluye los elementos y atributos de presentación que el W3C espera que dejen de utilizarse a medida que madure el soporte de las hojas de estilo.
+- Transitional: Este DTD permite el uso de elementos y atributos de presentación. Los autores pueden usar el DTD Transicional si es necesario el soporte de elementos y atributos de presentación.
+- Frameset: Este DTD se utiliza para documentos que incluyen marcos.
+
+___
+5. **Qué son los metadatos y cómo se especifican en HTML?**
+
+
+
