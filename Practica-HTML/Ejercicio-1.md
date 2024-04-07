@@ -12,9 +12,11 @@ HTML fue creado en 1991 por Tim Berners-Lee.
 4. HTML 4.0 y 4.01: HTML 4.0 fue lanzado en 1997 y agregó soporte para hojas de estilo externas, capas y marcos en línea. La versión 4.01 se lanzó en 1999 y corrigió errores en la versión anterior.
 5. XHTML: XHTML (Extensible Hypertext Markup Language) se lanzó en 2000 y se basó en la sintaxis de XML. XHTML fue una importante evolución de HTML y proporcionó una mayor modularidad y estructura al lenguaje.
 6. HTML5: Es la última versión del lenguaje HTML, lanzada en 2014. HTML5 introduce muchas nuevas características, como etiquetas semánticas, soporte multimedia, formularios mejorados, API de arrastrar y soltar, almacenamiento local y mucho más.
-___
+
+---
+
 2. **Cuáles son los principios básicos que el W3C recomienda seguir para la creación de documentos
-con HTML?**
+   con HTML?**
 
 - Compatibilidad para contenido preexistente.
 - No reinventar la rueda, es decir si ya existe una tecnologia usada para un caso de uso en especifico, utilizarla antes que inventar algo nuevo con el mismo fin.
@@ -29,25 +31,44 @@ con HTML?**
 - Acceso universal.
 - Soporte multilenguaje.
 - Accesibilidad.
-___
+
+---
+
 3. **En las Especificaciones de HTML, ¿cuándo un elemento o atributo se considera desaprobado? ¿y
-obsoleto?**
+   obsoleto?**
 
 Un elemento o atributo de HTML se considera desaprobado cuando ha quedado anticuado por la presencia de estructuras nuevas. Aunque los elementos desaprobados pueden seguir funcionando en algunos navegadores por razones de compatibilidad, su uso no se recomienda y se aconseja utilizar las nuevas estructuras que los han reemplazado.
 
 Por otro lado, un elemento o atributo se considera obsoleto cuando ha sido desaconsejado o incluso eliminado de las especificaciones oficiales de HTML.
-___
+
+---
+
 4. **Qué es el DTD y cuáles son los posibles DTDs contemplados en la especificación de HTML 4.01?**
 
 DTD (DOCTYPE, Definición de Tipo de Documento) es una especificación utilizada en la programación web para definir la estructura y las reglas de validación de un documento XML o SGML. Su función básica es la descripción de la estructura de datos, para usar una estructura común y mantener la consistencia entre todos los documentos que utilicen la misma DTD2. La DTD también declara cuáles juegos de caracteres podemos utilizar.
 
 En la especificación de HTML 4.01, se contemplan tres posibles DTDs:
+
 - Strict: Este DTD hace énfasis en la separación del contenido de la presentación y el comportamiento. Excluye los elementos y atributos de presentación que el W3C espera que dejen de utilizarse a medida que madure el soporte de las hojas de estilo.
 - Transitional: Este DTD permite el uso de elementos y atributos de presentación. Los autores pueden usar el DTD Transicional si es necesario el soporte de elementos y atributos de presentación.
 - Frameset: Este DTD se utiliza para documentos que incluyen marcos.
 
-___
+---
+
 5. **Qué son los metadatos y cómo se especifican en HTML?**
 
+- Los metadatos son información adicional que dan mas contexto sobre el HTML tal como: la version que se esta utilizando, el titulo de la pagina web.
+- Estos metadatos se especifican utilizando el elemento META dentro de html como por ejemplo:
 
+```
+  <head>
+  <meta charset="UTF-8">
+  <meta name="description" content="example">
+  <meta name="keywords" content="HTML, CSS, JavaScript">
+  <meta name="author" content="John Doe">
+  <meta http-equiv="refresh" content="30">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+```
 
+---
