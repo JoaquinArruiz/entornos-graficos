@@ -146,12 +146,223 @@ e.
 ```
 <table width="200">
 <caption>
+Título
+</caption>
+<tr>
+<td bgcolor="#dddddd">&nbsp;</td>
+<td bgcolor="#dddddd">&nbsp;</td>
+<td bgcolor="#dddddd">&nbsp;</td>
+</tr>
+<tr>
+<td bgcolor="#dddddd">&nbsp;</td>
+<td bgcolor="#dddddd">
+&nbsp;</td>
+<td bgcolor="#dddddd">&nbsp;</td>
+</tr>
+</table>
 ```
 
 ```
 <table width="200">
 <tr>
+<td colspan="3"><div
+align="center">Título</div></td>
+</tr>
+<tr>
+<td bgcolor="#dddddd">&nbsp;</td>
+<td bgcolor="#dddddd">&nbsp;</td>
+<td bgcolor="#dddddd">&nbsp;</td>
+</tr>
+<tr>
+<td bgcolor="#dddddd">&nbsp;</td>
+<td bgcolor="#dddddd">&nbsp;</td>
+<td bgcolor="#dddddd">&nbsp;</td>
+</tr>
+</table>
 ```
 
-En el primer caso se visualiza una etiqueta de tabla que tiene una caption, aunque al estar vacia la caption no contiene titulo la tabla
-En el segundo caso se crea una tabla y se agrega una fila con tr
+En el primer caso se visualiza una etiqueta de tabla que tiene una caption, que muestra el titulo encima de la tabla
+En el segundo caso se crea una tabla y se agrega una fila con tr con el titulo dentro de la tabla y centrado por la propiedad align del div
+
+f.
+
+```
+<table width="200">
+<tr>
+<td colspan="3"><div
+align="center">Título</div></td>
+</tr>
+<tr>
+<td rowspan="2" bgcolor="#dddddd">&nbsp;</td>
+<td bgcolor="#dddddd">&nbsp;</td>
+<td bgcolor="#dddddd">&nbsp;</td>
+</tr>
+<tr>
+<td bgcolor="#dddddd">&nbsp;</td>
+<td bgcolor="#dddddd">&nbsp;</td>
+</tr>
+</table>
+```
+
+```
+<table width="200">
+<tr>
+<td colspan="3"><div
+align="center">Título</div></td>
+</tr>
+<tr>
+<td colspan="2"
+bgcolor="#dddddd">&nbsp;</td>
+<td bgcolor="#dddddd">&nbsp;</td>
+</tr>
+<tr>
+<td bgcolor="#dddddd">&nbsp;</td>
+<td bgcolor="#dddddd">&nbsp;</td>
+<td bgcolor="#dddddd">&nbsp;</td>
+</tr>
+</table>
+```
+
+En el primer caso la primera celda de la segunda fila ocupa dos filas por el atributo rowspan=2
+En el segundo caso la primer celda de la segunda filda ocupa dos columnas por el atributo colspan
+
+g.
+
+```
+<table width="200" border="1">
+<tr>
+<td colspan="3"><div
+align="center">Título</div></td>
+</tr>
+<tr>
+<td colspan="2"rowspan="2">&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td width="50%">&nbsp;</td>
+</tr>
+</table>
+```
+
+```
+<table width="200" border="1" cellpadding="0"
+cellspacing="0">
+<tr>
+<td colspan="2"><div
+align="center">Título</div></td>
+</tr>
+<tr>
+<td rowspan="2">&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td width="50%">&nbsp;</td>
+</tr>
+</table>
+```
+
+En el primer caso la primera celda de la segunda fila se extiende a través de dos columnas y dos filas gracias a los atributos colspan="2" y rowspan="2"
+En el segundo caso la primera celda de la segunda fila se extiende a través de dos filas gracias al atributo rowspan="2". Esto significa que la celda ocupará el espacio de la primera celda en la segunda y tercera fila tambien contiene los atributos que eliminan el espacio entre las celdas y el espacio entre el contenido de la celda y sus bordes cellpadding="0" y cellspacing="0"
+
+h.
+
+```
+<form id="form1" name="form1" action="procesar.php" method="post" target="_blank">
+<fieldset>
+<legend>LOGIN</legend>
+Usuario: <input type="text" id="usu1" name="usu1" value="xxx" /><br />
+Clave: <input type="password" id="clave1" name="clave1" value="xxx" />
+</fieldset>
+<input type="submit" id="boton1" name="boton1" value="Enviar" />
+</form>
+```
+
+```
+<form id="form2" name="form2" action="" method="get" target="_blank">
+LOGIN<br />
+<label>Usuario: <input type="text" id="usu2" name="usu2" /></label><br />
+<label>Clave: <input type="text" id="clave2" name="clave2" /></label><br />
+<input type="submit" id="boton2" name="boton2" value="Enviar" />
+</form>
+```
+
+```
+<form id="form3" name="form3" action="mailto:xx@xx.com” enctype=text/plain method="p
+ost" target="_blank">
+<fieldset>
+<legend>LOGIN</legend>
+Usuario: <input type="text" id="usu3" name="usu3" /><br />
+Clave: <input type="password" id="clave3" name="clave3" />
+</fieldset>
+<input type="reset" id="boton3" name="boton3" value=
+"Enviar" />
+</form>
+```
+
+El primer caso ya tiene valores por defecto en los campos mientras que los otros dos no y abre una nueva pestaña al hacer submit
+El segundo caso la clave es de tipo "text" y se visualizan los datos enviados por el metodo y abre una nueva pestaña al hacer submit
+El tercer caso no abre una ventana nueva porque el input tiene el type="reset"
+
+i.
+
+```
+<label>Botón 1
+<button type="button" name="boton1" id="boton1">
+<img src="logo.jpg" alt="Botón con imagen " width="30" height="20" /><br />
+<b>CLICK AQUÍ</b></button></label>
+```
+
+```
+<label>Botón 2
+<input type="button" name="boton2" id="boton2" value="CLICK AQUÍ" />
+</label>
+```
+
+El primer caso muestra un boton con una imagen y un texto. Donde se utiliza el atributo button
+El segundo caso muestra solamente el texto. Donde se utilizxa el metodo input de tipo boton
+
+j.
+
+```
+<p><label><input type="radio" name="opcion" id="X" value="X" />X</label><br />
+<label><input type="radio" name="opcion" id="Y" value="Y" />Y</label></p>
+```
+
+```
+<p><label><input type="radio" name="opcion1" id="X" value="X" />X</label><br />
+<label><input type="radio" name="opcion2" id="Y" value="Y" />Y</label></p>
+```
+
+El primer código genera 2 radio buttons en los cuales solo se puede marcar una opción, mientras que el segundo código genera 2 radio buttons en los cuales se pueden seleccionar
+ambas opciones. Esto es debido a los valores del atributo name.
+
+k.
+
+```
+<select name="lista">
+<optgroup label="Caso 1">
+<option>Mayo</option>
+<option>Junio</option>
+</optgroup>
+<optgroup label="Caso 2">
+<option>Mayo</option>
+<option>Junio</option>
+</optgroup>
+</select>
+```
+
+```
+<select name="lista[]" multiple="multiple">
+<optgroup label=" Caso 1">
+<option>Mayo</option>
+<option>Junio</option>
+</optgroup>
+<optgroup label=" Caso 2">
+<option>Mayo</option>
+<option>Junio</option>
+</optgroup>
+</select>
+```
+
+El primer caso es un menu desplegable simple que permite seleccionar una sola opcion a la vez
+El segundo caso es un menu desplegable que permite seleccionar varias opciones a la vez
