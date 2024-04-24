@@ -16,12 +16,12 @@ En linea, incrustado en la cabecera y mediante hojas de estilo externas.
 **Ejemplifique cada uno.**
 
     HTML:
-            <a>¡Hola!</a>
-            <a class="my-class">¡Chau!</a>
-            <a id="my-id">Hola?</a>
+            <p>¡Hola!</p>
+            <p class="my-class">¡Chau!</p>
+            <p id="my-id">Hola?</p>
     1-
     CSS:
-            a{
+            p{
                 color: red;
                 front-family: Avenir;
             }
