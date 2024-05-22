@@ -1,4 +1,4 @@
-<?
+<?php
 // Archivo para acumular el numero de visitas
 $archivo = "contador.dat";
 // Abrir el archivo para lectura
