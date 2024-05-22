@@ -37,3 +37,10 @@ echo "<font face='arial' size='3'>Cantidad de visitas:".$cont."</font>";
 
 **En la misma carpeta, crear el archivo de texto contador.dat, con el valor inicial del contador y con
 permisos de lectura y escritura.**
+
+
+
+
+---
+
+Asignamos el valor inicial del contador en 0 dentro del archivo "contador.dat" y hosteamos un servidor local con XAMPP, luego de correr la pagina con estos 3 archivos observamos que cada vez que se accede a la pagina el contador incrementa en 1 gracias al ejecturse el codigo en "contador.php" y luego es mostrado en la pagina ya que en "visitar.php" se toma el valor del contador con un llamado de la funcion include.
