@@ -1,2 +1,6 @@
 <?php
+/*
+Escribir un script en PHP para poder enviar un correo electrónico, con formato HTML, a
+través del servidor.
+*/
 
